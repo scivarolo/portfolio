@@ -4,4 +4,26 @@
 
 .site-header {
   background-color: $brand-color;
+  color: $text-color;
+  padding: 1em;
+  //border-bottom: 2px solid $text-color;
+}
+
+.site-title,
+.site-subhead {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .site-header {
+    display: flex;
+    //position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  .site-subhead {
+    margin-left: auto;
+  }
 }

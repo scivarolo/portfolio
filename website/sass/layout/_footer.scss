@@ -1,3 +1,21 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.site-footer {
+  padding: 1em;
+  background-color: $brand-color;
+}
+
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a {
+    color: $text-color;
+  }
+}
+
+.list-heading {
+  margin-bottom: .5em;
+}
