@@ -33,19 +33,6 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/sass\/abstracts\/_functions.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/abstracts\/_functions.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/abstracts\/_mixins.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -296,37 +283,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/sass\/themes\/_default.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/css\/themes\/_default.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/themes\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/sass\/themes\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		},
 	"\/sass\/vendor\/_normalize.scss": {
 		"aP": 1,
