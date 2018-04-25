@@ -27,9 +27,24 @@ html {
 a {
   color: $brand-color;
   text-decoration: none;
-
+  position: relative;
   @include on-event {
     color: $text-color;
-    text-decoration: underline;
+    //text-decoration: underline;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -.125em;
+    height: .125em;
+    width: 0%;
+    left: 0;
+    background-color: $text-color;
+    transition: width .25s ease-in-out;
+  }
+  &:hover{
+    &::after {
+      width: 100%;
+    }
   }
 }

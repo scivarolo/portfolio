@@ -430,10 +430,22 @@ html {
  */
 a {
   color: #04ec9a;
-  text-decoration: none; }
+  text-decoration: none;
+  position: relative; }
   a:hover, a:active, a:focus {
-    color: #424242;
-    text-decoration: underline; }
+    color: #424242; }
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: -.125em;
+    height: .125em;
+    width: 0%;
+    left: 0;
+    background-color: #424242;
+    -webkit-transition: width .25s ease-in-out;
+    transition: width .25s ease-in-out; }
+  a:hover::after {
+    width: 100%; }
 
 /**
  * Basic typography style for copy text
@@ -498,5 +510,37 @@ body {
   width: 1px; }
 
 .site-header {
+  background-color: #04ec9a;
+  color: #424242;
+  padding: 1em; }
+
+.site-title,
+.site-subhead {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0; }
+
+@media screen and (min-width: 700px) {
+  .site-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    top: 0; }
+  .site-subhead {
+    margin-left: auto; } }
+
+.site-footer {
+  padding: 1em;
   background-color: #04ec9a; }
+
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .social-links a {
+    color: #424242; }
+
+.list-heading {
+  margin-bottom: .5em; }
 /*# sourceMappingURL=style.css.map */
