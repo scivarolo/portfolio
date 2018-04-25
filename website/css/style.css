@@ -429,18 +429,18 @@ html {
  * Basic styles for links
  */
 a {
-  color: #e50050;
+  color: #04ec9a;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #222222;
+    color: #424242;
     text-decoration: underline; }
 
 /**
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
-  font: normal 125%/1.4 "Sour", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  color: #424242;
+  font: normal 125%/1.4 "Space Mono", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 /**
  * Clear inner floats
@@ -496,4 +496,7 @@ body {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.site-header {
+  background-color: #04ec9a; }
 /*# sourceMappingURL=style.css.map */

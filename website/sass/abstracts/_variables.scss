@@ -3,21 +3,22 @@
 // -----------------------------------------------------------------------------
 
 
-
+$color__green: #04ec9a;
+$color__black: #424242;
 
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Sour', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Space Mono', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: $color__black !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$brand-color: $color__green !default;
 
 /// Light grey
 /// @type Color
