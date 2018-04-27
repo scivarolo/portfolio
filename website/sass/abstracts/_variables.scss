@@ -2,15 +2,18 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
 $color__green: #04ec9a;
 $color__black: #424242;
 
+$karla: 'Karla', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$space-mono: 'Space Mono', monospace;
+$sporting: 'Sporting Grotesque_Regular', 'Helvetica', 'Arial', sans-serif;
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Space Mono', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
+$text-font-stack: $karla !default;
+$mono-font: $space-mono !default;
+$display-font: $sporting !default;
 
 /// Copy text color
 /// @type Color
@@ -31,7 +34,6 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// Dark grey
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
-
 
 /// Container's maximum width
 /// @type Length
