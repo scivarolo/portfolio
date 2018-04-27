@@ -521,25 +521,32 @@ h1, h2, h3, h4, h5, h6 {
   width: 1px; }
 
 .site-header {
-  background-color: #0ce5a9;
   color: #424242;
-  padding: 1em; }
+  padding: 1.5em; }
 
-.site-title,
-.site-subhead {
-  font-size: 1em;
-  font-weight: 400;
+.site-title {
+  font-size: 20px;
+  font-size: 1.25em;
   margin: 0; }
+
+.site-subhead,
+.site-location {
+  font-size: 14px;
+  font-size: 0.875em;
+  font-family: "Space Mono", monospace;
+  margin: 0; }
+
+.site-location {
+  color: #0ce5a9; }
 
 @media screen and (min-width: 700px) {
   .site-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100vw;
-    top: 0; }
-  .site-subhead {
-    margin-left: auto; } }
+    width: 100vw; }
+  .site-title {
+    width: 40.9166666667%; } }
 
 .site-footer {
   padding: 1em;
