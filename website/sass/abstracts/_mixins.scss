@@ -32,3 +32,8 @@
   }
 }
 
+/// Font Size mixin
+@mixin font-size($size) {
+  font-size: ($size * 10) + px;
+  font-size: ($size *.625) + em; 
+}
