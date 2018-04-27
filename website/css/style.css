@@ -462,7 +462,8 @@ body {
   font: normal 100%/1.5 "Karla", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Sporting Grotesque_Regular", "Helvetica", "Arial", sans-serif; }
+  font-family: "Sporting Grotesque_Regular", "Helvetica", "Arial", sans-serif;
+  font-weight: normal; }
 
 /**
  * Clear inner floats
