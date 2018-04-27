@@ -429,7 +429,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: #04ec9a;
+  color: #0ce5a9;
   text-decoration: none;
   position: relative; }
   a:hover, a:active, a:focus {
@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 1px; }
 
 .site-header {
-  background-color: #04ec9a;
+  background-color: #0ce5a9;
   color: #424242;
   padding: 1em; }
 
@@ -542,7 +542,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-footer {
   padding: 1em;
-  background-color: #04ec9a; }
+  background-color: #0ce5a9; }
 
 .social-links {
   list-style: none;
