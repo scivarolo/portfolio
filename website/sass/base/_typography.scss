@@ -10,3 +10,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $display-font;
   font-weight: normal;
 }
+
+.section__heading {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $brand-color;
+    mix-blend-mode: multiply;
+    transform: translateY(33%);
+  }
+}

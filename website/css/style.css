@@ -465,6 +465,22 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Sporting Grotesque_Regular", "Helvetica", "Arial", sans-serif;
   font-weight: normal; }
 
+.section__heading {
+  position: relative;
+  display: inline-block;
+  line-height: 1; }
+  .section__heading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #0ce5a9;
+    mix-blend-mode: multiply;
+    -webkit-transform: translateY(33%);
+            transform: translateY(33%); }
+
 /**
  * Clear inner floats
  */
@@ -561,4 +577,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .list-heading {
   margin-bottom: .5em; }
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.l-project {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 1em; }
+
+.l-project-title {
+  margin-bottom: 0; }
+
+.l-project-description {
+  margin: 0; }
+
+.l-project-tags {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  font-size: 0.875em;
+  margin-top: 10px; }
+
+.l-project-tag {
+  background-color: #0ce5a9;
+  padding: 2px 5px 3px 5px;
+  border-radius: 2px; }
+
+@media (min-width: 700px) {
+  .site-intro > p {
+    padding-left: 40.9166666667%;
+    font-size: 20px;
+    font-size: 1.25em; } }
 /*# sourceMappingURL=style.css.map */

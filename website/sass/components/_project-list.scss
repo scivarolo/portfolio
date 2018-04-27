@@ -1,0 +1,31 @@
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.l-project {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 1em;
+}
+
+
+.l-project-title {
+  margin-bottom: 0;
+}
+.l-project-description {
+  margin: 0;
+}
+
+.l-project-tags {
+  font-family: $space-mono;
+  @include font-size(1.4);
+  margin-top: 10px;
+}
+
+.l-project-tag {
+  background-color: $brand-color;
+  padding: 2px 5px 3px 5px;
+  border-radius: 2px;
+}
