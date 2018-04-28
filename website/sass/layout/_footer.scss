@@ -3,19 +3,49 @@
 // -----------------------------------------------------------------------------
 
 .site-footer {
-  padding: 1em;
-  background-color: $brand-color;
+  padding-top: 3em;
+  padding-bottom: 6em;
 }
 
+.footer-row {
+  @media (min-width: 700px) {
+    display: flex;
+  }
+}
+
+.social-links__heading {
+  width: (5 / 12) * 100%;
+  margin-top: 2em;
+  font-family: $space-mono;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 .social-links {
   list-style: none;
   margin: 0;
   padding: 0;
   a {
+    display: inline;
     color: $text-color;
-  }
-}
+    text-decoration: none;
+    font-size: 9vw;
+    font-family: $sporting;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, white 50%);
+    background-position: 0 0;
+    background-size: 200.1% 200.1%;
+    color: transparent;
+    -webkit-text-stroke: 1px $text-color;
+    -webkit-text-fill-color: transparent;
+    transition: background-position .5s ease-in-out;
 
-.list-heading {
-  margin-bottom: .5em;
+    @media (min-width: 1200px) {
+      @include font-size(10.8);
+    }
+    &:hover, &:focus {
+      color: white;
+      background-position: 0 100%;
+    }
+  }
 }

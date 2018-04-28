@@ -20,7 +20,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+body {
+  background-image: linear-gradient(to top, $brand-color 0%, rgba($brand-color, 0) 33%, );
+}
 /**
  * Basic styles for links
  */

@@ -425,6 +425,10 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0ce5a9), color-stop(33%, rgba(12, 229, 169, 0)));
+  background-image: linear-gradient(to top, #0ce5a9 0%, rgba(12, 229, 169, 0) 33%); }
+
 /**
  * Basic styles for links
  */
@@ -566,21 +570,53 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     width: 100vw; }
   .site-title {
-    width: 40.9166666667%; } }
+    width: 41.6666666667%; } }
 
 .site-footer {
-  padding: 1em;
-  background-color: #0ce5a9; }
+  padding-top: 3em;
+  padding-bottom: 6em; }
+
+@media (min-width: 700px) {
+  .footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.social-links__heading {
+  width: 41.6666666667%;
+  margin-top: 2em;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .social-links {
   list-style: none;
   margin: 0;
   padding: 0; }
   .social-links a {
-    color: #424242; }
-
-.list-heading {
-  margin-bottom: .5em; }
+    display: inline;
+    color: #424242;
+    text-decoration: none;
+    font-size: 9vw;
+    font-family: "Sporting Grotesque_Regular", "Helvetica", "Arial", sans-serif;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, white));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, white 50%);
+    background-position: 0 0;
+    background-size: 200.1% 200.1%;
+    color: transparent;
+    -webkit-text-stroke: 1px #424242;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: background-position .5s ease-in-out;
+    transition: background-position .5s ease-in-out; }
+    @media (min-width: 1200px) {
+      .social-links a {
+        font-size: 108px;
+        font-size: 6.75em; } }
+    .social-links a:hover, .social-links a:focus {
+      color: white;
+      background-position: 0 100%; }
 
 .projects-list {
   list-style: none;
@@ -642,13 +678,13 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex: 1 1;
             flex: 1 1; }
   .l-project-title {
-    width: 40.9166666667%; }
+    width: 41.6666666667%; }
   .l-project-tags {
     margin-left: auto; } }
 
 @media (min-width: 700px) {
   .site-intro > p {
-    padding-left: 40.9166666667%;
+    padding-left: 41.6666666667%;
     font-size: 20px;
     font-size: 1.25em; } }
 /*# sourceMappingURL=style.css.map */
