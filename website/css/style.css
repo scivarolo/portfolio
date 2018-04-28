@@ -428,13 +428,13 @@ html {
 /**
  * Basic styles for links
  */
-a {
+a.link {
   color: #0ce5a9;
   text-decoration: none;
   position: relative; }
-  a:hover, a:active, a:focus {
+  a.link:hover, a.link:active, a.link:focus {
     color: #424242; }
-  a::after {
+  a.link::after {
     content: "";
     position: absolute;
     bottom: -.125em;
@@ -444,7 +444,7 @@ a {
     background-color: #424242;
     -webkit-transition: width .25s ease-in-out;
     transition: width .25s ease-in-out; }
-  a:hover::after {
+  a.link:hover::after {
     width: 100%; }
 
 @font-face {
@@ -585,14 +585,36 @@ h1, h2, h3, h4, h5, h6 {
 .projects-list {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 3em 0; }
 
 .l-project {
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 1em; }
+  border-top: 1px solid #ededed;
+  padding-bottom: 3em;
+  padding-top: .75em; }
 
-.l-project-title {
-  margin-bottom: 0; }
+.l-project-title h2 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-size: 1.25em; }
+
+.l-project-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #424242;
+  position: relative; }
+  .l-project-link h2 {
+    display: inline;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #0ce5a9));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #0ce5a9 50%);
+    background-position: 0 0;
+    background-size: 200.1%;
+    -webkit-transition: background-position 0.3s ease-in-out;
+    transition: background-position 0.3s ease-in-out; }
+  .l-project-link:hover h2 {
+    background-position: -100% 0; }
+  .l-project-link:hover h2::after {
+    -webkit-transform: translateY(10%) scaleX(1);
+            transform: translateY(10%) scaleX(1); }
 
 .l-project-description {
   margin: 0; }
@@ -607,6 +629,22 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0ce5a9;
   padding: 2px 5px 3px 5px;
   border-radius: 2px; }
+
+@media (min-width: 700px) {
+  .l-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1; }
+  .l-project-title {
+    width: 40.9166666667%; }
+  .l-project-tags {
+    margin-left: auto; } }
 
 @media (min-width: 700px) {
   .site-intro > p {
