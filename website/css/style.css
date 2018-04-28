@@ -582,12 +582,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 700px) {
   .footer-row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; } }
+    display: grid;
+    grid: auto-flow / 5fr 7fr; } }
 
 .social-links__heading {
-  width: 41.6666666667%;
   margin-top: 2em;
   font-family: "Space Mono", monospace;
   text-transform: uppercase;
@@ -596,7 +594,8 @@ h1, h2, h3, h4, h5, h6 {
 .social-links {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  grid-column: 2; }
   .social-links a {
     display: inline;
     color: #424242;
@@ -672,19 +671,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 700px) {
   .l-project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1;
-            flex: 1 1; }
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); }
   .l-project-title {
-    width: 41.6666666667%; }
+    grid-column-start: 1;
+    grid-column: 1 / span 5; }
+  .l-project-description {
+    grid-column: 6 / span 4; }
   .l-project-tags {
-    margin-left: auto; } }
+    margin-left: auto;
+    grid-column: 10 / span 3; } }
 
 @media (min-width: 700px) {
   .site-intro > p {
