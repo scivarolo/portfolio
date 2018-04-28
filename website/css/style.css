@@ -427,7 +427,12 @@ html {
 
 body {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#0ce5a9), color-stop(33%, rgba(12, 229, 169, 0)));
-  background-image: linear-gradient(to top, #0ce5a9 0%, rgba(12, 229, 169, 0) 33%); }
+  background-image: linear-gradient(to top, #0ce5a9 0%, rgba(12, 229, 169, 0) 33%);
+  /* iPhone X notch padding */
+  padding-left: constant(safe-area-inset-left);
+  padding-right: constant(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right); }
 
 /**
  * Basic styles for links
@@ -567,8 +572,7 @@ h1, h2, h3, h4, h5, h6 {
   .site-header {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: 100vw; }
+    display: flex; }
   .site-title {
     width: 41.6666666667%; } }
 
@@ -597,7 +601,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline;
     color: #424242;
     text-decoration: none;
-    font-size: 9vw;
+    font-size: 8vw;
     font-family: "Sporting Grotesque_Regular", "Helvetica", "Arial", sans-serif;
     background-clip: text;
     -webkit-background-clip: text;
