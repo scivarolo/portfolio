@@ -57,14 +57,10 @@
 
 @media (min-width: 700px) {
   .l-project {
-    //display: flex;
-    //align-items: baseline;
-    //flex: 1 1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
   .l-project-title {
-    //width: ((5 / 12) * 100%);
     grid-column-start: 1;
     grid-column: 1 / span 5;
   }
