@@ -677,10 +677,10 @@ h1, h2, h3, h4, h5, h6 {
     grid-column-start: 1;
     grid-column: 1 / span 5; }
   .l-project-description {
-    grid-column: 6 / span 4; }
+    grid-column: 6 / span 5; }
   .l-project-tags {
     margin-left: auto;
-    grid-column: 10 / span 3; } }
+    grid-column: 111 / span 2; } }
 
 @media (min-width: 700px) {
   .site-intro > p {
