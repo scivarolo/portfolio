@@ -674,6 +674,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 700px) {
   .l-project {
     display: grid;
+    grid-column-gap: 1em;
     grid-template-columns: repeat(12, 1fr); }
   .l-project-title {
     grid-column-start: 1;
@@ -683,6 +684,32 @@ h1, h2, h3, h4, h5, h6 {
   .l-project-tags {
     margin-left: auto;
     grid-column: 11 / span 2; } }
+
+.l-experience-company h2 {
+  margin-bottom: 0;
+  color: #0ce5a9; }
+
+.l-experience-title {
+  font-size: 20px;
+  font-size: 1.25em;
+  margin: 0; }
+
+.l-experience-dates {
+  font-family: "Space Mono", monospace;
+  margin: 0; }
+
+@media (min-width: 700px) {
+  .l-experience {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1em; }
+  .l-experience-title,
+  .l-experience-company,
+  .l-experience-dates {
+    grid-column: 1 / span 5; }
+  .l-experience-description {
+    grid-column: 6 / span 7;
+    grid-row: 1 / span 3; } }
 
 @media (min-width: 700px) {
   .site-intro > p {
