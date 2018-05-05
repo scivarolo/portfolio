@@ -570,11 +570,21 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 700px) {
   .site-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1em;
+    margin-top: 1em; }
   .site-title {
-    width: 41.6666666667%; } }
+    grid-column: 1 / span 5; }
+  .site-subheads {
+    grid-column: 6 / span 7;
+    margin-top: .25em; }
+  .site-subhead {
+    font-size: 18px;
+    font-size: 1.125em; }
+  .site-location {
+    font-size: 16px;
+    font-size: 1em; } }
 
 .site-footer {
   padding-top: 3em;
@@ -711,9 +721,26 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 6 / span 7;
     grid-row: 1 / span 3; } }
 
+.site-intro-content p {
+  line-height: 1.6; }
+
 @media (min-width: 700px) {
-  .site-intro > p {
-    padding-left: 41.6666666667%;
-    font-size: 20px;
-    font-size: 1.25em; } }
+  .site-intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1em; }
+  .site-intro-content {
+    grid-column: 6 / span 7; }
+    .site-intro-content p {
+      font-size: 20px;
+      font-size: 1.25em; } }
+
+@media (min-width: 800px) {
+  .site-intro {
+    margin: 3em auto; } }
+
+@media (min-width: 1000px) {
+  .site-intro p {
+    font-size: 24px;
+    font-size: 1.5em; } }
 /*# sourceMappingURL=style.css.map */

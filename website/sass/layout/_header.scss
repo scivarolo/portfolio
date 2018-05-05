@@ -27,9 +27,22 @@
 
 @media screen and (min-width: 700px) {
   .site-header {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1em;
+    margin-top: 1em;
   }
   .site-title {
-    width: ((5 / 12) * 100%);
+    grid-column: 1 / span 5;
+  }
+  .site-subheads {
+    grid-column: 6 / span 7;
+    margin-top: .25em;
+  }
+  .site-subhead {
+    @include font-size(1.8);
+  }
+  .site-location {
+    @include font-size(1.6);
   }
 }
