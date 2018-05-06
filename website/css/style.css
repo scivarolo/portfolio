@@ -648,6 +648,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   font-size: 1.25em; }
 
+.l-project-title {
+  margin-bottom: 10px; }
+
 .l-project-link {
   display: inline-block;
   text-decoration: none;
@@ -683,8 +686,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2px 7px 3px 7px;
   border-radius: 2px;
   margin-bottom: 5px;
-  display: block;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
 
 @media (min-width: 700px) {
   .l-project {
@@ -698,7 +701,8 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 6 / span 5; }
   .l-project-tags {
     margin-left: auto;
-    grid-column: 11 / span 2; } }
+    grid-column: 11 / span 2;
+    display: block; } }
 
 .l-experience-company h2 {
   margin-bottom: 0;

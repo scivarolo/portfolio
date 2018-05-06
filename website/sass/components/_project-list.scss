@@ -17,6 +17,9 @@
   margin-bottom: 0;
   @include font-size(2);
 }
+.l-project-title {
+  margin-bottom: 10px;
+}
 
 .l-project-link {
   display:inline-block;
@@ -56,8 +59,8 @@
   padding: 2px 7px 3px 7px;
   border-radius: 2px;
   margin-bottom: 5px;
-  display: block;
   text-align: center;
+  display: inline-block;
 }
 
 @media (min-width: 700px) {
@@ -76,6 +79,7 @@
   .l-project-tags {
     margin-left: auto;
     grid-column: 11 / span 2;
+    display: block;
   }
 }
 
