@@ -47,12 +47,17 @@
   font-family: $space-mono;
   @include font-size(1.4);
   margin-top: 10px;
+  text-align: right;
 }
 
 .l-project-tag {
   background-color: $brand-color;
-  padding: 2px 5px 3px 5px;
+  color: white;
+  padding: 2px 7px 3px 7px;
   border-radius: 2px;
+  margin-bottom: 5px;
+  display: block;
+  text-align: center;
 }
 
 @media (min-width: 700px) {
