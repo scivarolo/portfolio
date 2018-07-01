@@ -7,3 +7,6 @@ $(document).ready(function(){
     lazyLoad: true
   });
 });
+
+window.sr = ScrollReveal();
+sr.reveal('.revealjs', {duration: 750, delay: 150});

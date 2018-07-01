@@ -16,6 +16,9 @@
 .l-project-title h2 {
   margin-bottom: 0;
   @include font-size(2);
+  @media(min-width: 1200px) {
+    @include font-size(2.4);
+  }
 }
 .l-project-title {
   margin-bottom: 10px;

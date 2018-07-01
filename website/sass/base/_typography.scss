@@ -15,15 +15,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: inline-block;
   line-height: 1;
+  @include font-size(4.2);
   &::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 25%;
     background-color: $brand-color;
     mix-blend-mode: multiply;
-    transform: translateY(33%);
+    transform: translateY(55%);
   }
 }
