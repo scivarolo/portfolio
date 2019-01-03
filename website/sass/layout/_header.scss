@@ -4,7 +4,7 @@
 
 .site-header {
   color: $text-color;
-  padding: 1.5em;
+  padding: $section-padding;
 }
 
 .site-title {
@@ -30,7 +30,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 1em;
-    margin-top: 1em;
   }
   .site-title {
     grid-column: 1 / span 5;

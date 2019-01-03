@@ -47,6 +47,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/css/style.css.map",
+		"oF": 0
+		},
 	"/fonts/Regular/Sporting_Grotesque-Regular_web.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -832,6 +839,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/css/components/_project-list.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/components/_software.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/css/components/_software.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
