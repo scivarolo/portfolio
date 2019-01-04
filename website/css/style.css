@@ -458,9 +458,6 @@ a.link,
   .text-link:hover::after {
     width: 100%; }
 
-.text-link {
-  font-family: "Space Mono", monospace; }
-
 @font-face {
   font-family: 'Sporting Grotesque_Regular';
   src: url("../fonts/Regular/Sporting_Grotesque-Regular_web.eot");
