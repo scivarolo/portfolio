@@ -510,6 +510,16 @@ a.link:hover::after,
  * Design Projects
  *********************/
 
+.projects-button-wrapper {
+  display: flex;
+}
+#show-projects-button {
+  cursor: pointer;
+  margin: 0 auto 3em;
+  text-align: center;
+  font-size: 18px;
+}
+
 .design-project {
   margin: 3em 0;
 }
