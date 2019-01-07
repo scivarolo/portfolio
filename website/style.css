@@ -308,6 +308,32 @@ a.link:hover::after,
  }
 
 /********************
+ * Dev Icons
+ ********************/
+
+ .dev-icons {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 3em;
+ }
+ .icon-wrapper {
+   flex-basis: 50px;
+   padding: 5px;
+ }
+ @media (min-width: 1200px) {
+   .icon-wrapper {
+     flex-basis: 60px;
+   }
+ }
+
+ @media (max-width: 560px) {
+   .icon-wrapper {
+     flex-basis: 20%;
+   }
+ }
+
+/********************
  * Software Section
  ********************/
 
