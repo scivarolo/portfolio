@@ -1,5 +1,6 @@
 :root {
-  --color__green: 12, 229, 169;
+  /* --color__green: 12, 229, 169; */
+  --color__green: 12, 214, 158;
   --color__green-dark: #09b585;
   --color__black: #424242;
   --karla: 'Karla', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
