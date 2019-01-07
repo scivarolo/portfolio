@@ -8,5 +8,4 @@ $(document).ready(function(){
   });
 });
 
-window.sr = ScrollReveal();
-sr.reveal('.revealjs', {duration: 750, delay: 150});
+ScrollReveal().reveal('.revealjs', {duration: 750, delay: 150});
