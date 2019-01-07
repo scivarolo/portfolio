@@ -37,6 +37,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* All elements inherit box-sizing */
@@ -63,6 +64,12 @@ html {
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
   width: 100%;
+}
+
+.anchor-offset {
+  position: relative;
+  top: -100px;
+  display: block;
 }
 
 img {
@@ -130,6 +137,7 @@ a.link,
 a.link:hover,
 a.link:active,
 a.link:focus,
+a.current,
 .text-link:hover,
 .text-link:active,
 .text-link:focus {
@@ -137,6 +145,7 @@ a.link:focus,
 }
 
 a.link::after,
+a.current::after,
 .text-link::after {
   content: "";
   position: absolute;
@@ -150,6 +159,7 @@ a.link::after,
 }
 
 a.link:hover::after,
+a.current::after,
 .text-link:hover::after {
   width: 100%;
 }
@@ -171,9 +181,9 @@ a.link:hover::after,
 
 @media (min-width: 1000px) {
 .site-title {
-  font-size: 30px;
-  font-size: calc(30em / 16);
-}
+    font-size: 30px;
+    font-size: calc(30em / 16);
+  }
 }
 
 .site-subhead,
@@ -200,7 +210,8 @@ a.link:hover::after,
   }
 
   .site-subheads {
-    grid-column: 6 / span 7;
+    grid-column: 6 / span 4;
+    grid-column: 1 / span 6;
     margin-top: .25em;
   }
 
@@ -213,6 +224,71 @@ a.link:hover::after,
     font-size: 16px;
     font-size: 1em;
   }
+
+  .site-nav {
+    grid-column: 6 / span 7;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 18px;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 1250px) {
+  .site-subheads {
+    margin-top: 10px;
+    grid-column: 6 / span 3;
+  }
+  .site-nav {
+    grid-column: 9 / span 4;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.sticky-header {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.15);
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--section-padding) * 2);
+  padding-right: calc(var(--section-padding) * 2);
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: -9px;
+  /* display: flex; */
+  /* align-items: center; */
+  border-bottom: 9px solid var(--brand-color);
+}
+.sticky-header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.sticky-header .site-title {
+  line-height: 1;
+}
+
+.sticky-header .site-nav {
+  margin-left: auto;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color .125s ease-in-out;
+}
+.site-title a:hover {
+  color: var(--brand-color);
 }
 
 /********************

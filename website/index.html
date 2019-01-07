@@ -27,17 +27,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
+    <a name="top"></a>
     <header class="site-header container">
       <h1 class="site-title">Sebastian Civarolo</h1>
       <div class="site-subheads">
         <h2 class="site-subhead">software developer</h2>
         <h3 class="site-location">nashville, tn</h3>
       </div>
+      <nav class="site-nav">
+        <a class="text-link nav-link current" href="#code">code</a>
+        <a class="text-link nav-link" href="#design">design</a>
+        <a class="text-link nav-link" href="#experience">experience</a>
+        <a class="text-link nav-link" href="#connect">connect</a>
+      </nav>
     </header>
 
     <div class="container site-intro">
-      <div class="site-intro-content revealjs">
+      <div class="site-intro-content">
         <p>Starting out as a self-taught web developer learning on the job, I discovered that I love the constant learning the challenge of figuring out new problems with code. I have built websites for a variety of clients including non-profit organizations and small businesses and have also worked on interactive exhibits for museums. I am currently at Nashville Software School learning full-stack web development with Javascript, React, Python, and Django.</p>
         <p>Before becoming a full-time software developer I was a multi-disciplinary designer with experience in print, environmental graphics, signage, exhibit design, and web design + development. Typography and attention to detail are central to my design aesthetic.</p>
         <div class="dev-icons">
@@ -94,6 +100,7 @@
     </div>
 
     <section class="container section section__software">
+      <a name="code" class="anchor-offset"></a>
       <h2 class="section__heading revealjs">Applications</h2>
       <div class="software-project">
         <div class="s-project__content">
@@ -212,6 +219,7 @@
 
 
     <section class="container section section__logos">
+      <a name="design" class="anchor-offset"></a>
       <h2 class="section__heading revealjs">Selected Logos</h2>
       <div class="logo-grid">
         <div class="logo logo__orangemade revealjs">
@@ -445,6 +453,7 @@
     </section>
 
     <section class="container section section__experience">
+      <a name="experience" class="anchor-offset"></a>
 
       <h2 class="section__heading revealjs">Experience</h2>
       <ul class="experience-list">
@@ -476,6 +485,7 @@
 
     <footer class="site-footer">
       <div class="footer-row container">
+        <a name="connect" class="anchor-offset"></a>
         <h3 class="social-links__heading revealjs">
           Connect
         </h3>
@@ -494,6 +504,18 @@
       </div>
 
     </footer>
+
+    <div class="sticky-header">
+      <div class="sticky-header-flex">
+        <h1 class="site-title"><a href="#top">Sebastian Civarolo</a></h1>
+        <nav class="site-nav">
+          <a class="text-link nav-link current" href="#code">code</a>
+          <a class="text-link nav-link" href="#design">design</a>
+          <a class="text-link nav-link" href="#experience">experience</a>
+          <a class="text-link nav-link" href="#connect">connect</a>
+        </nav>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
