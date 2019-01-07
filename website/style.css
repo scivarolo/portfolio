@@ -771,7 +771,12 @@ figure {
   }
   .l-experience-description {
     grid-column: 6 / span 7;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 4;
   }
 }
 
+@media (min-width: 1300px) {
+  .l-experience-description {
+    font-size: 18px;
+  }
+}
