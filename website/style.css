@@ -221,7 +221,7 @@ a.link:hover::after,
   padding-bottom: 3em;
 }
 
-@media (min-widdth: 700px) {
+@media (min-width: 700px) {
   .footer-row {
     display: grid;
     grid: auto-flow / 5fr 7fr;
