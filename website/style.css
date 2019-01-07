@@ -427,12 +427,30 @@ a.current::after,
     grid-template-columns: repeat(12, 1fr);
   }
   .s-project__content {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 6;
     padding-right: 2em;
   }
   .s-project__images {
-    grid-column: 6 / span 7;
+    grid-column: 7 / span 6;
     grid-row: 1;
+  }
+}
+
+@media (min-width: 1000px) {
+  .s-project__content {
+    grid-column: 1 / span 5;
+  }
+  .s-project__images {
+    grid-column: 6 / span 7;
+  }
+  .s-project__content {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .s-project__content p {
+    font-size: 18px;
   }
 }
 
