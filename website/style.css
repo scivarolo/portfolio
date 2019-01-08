@@ -983,3 +983,32 @@ figure {
   color: white;
   background-position: 0 100%;
 }
+
+/******************
+ * Tooltip
+ ******************/
+
+[tooltip] {
+  position: relative;
+}
+
+[tooltip]::after {
+  transition: all .125s ease-in-out;
+  content: attr(tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%) translateY(100%);
+  background: var(--brand-color);
+  text-align: center;
+  color: #fff;
+  padding: 4px 6px;
+  font-size: 12px;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+[tooltip]:hover::after {
+  opacity: 1;
+}
