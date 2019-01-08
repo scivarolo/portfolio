@@ -65,8 +65,7 @@ console.log('anchors', anchors)
 function updateCurrentLink() {
   let i = anchors.length;
 
-  console.log(i)
-  while(--i && window.scrollY + 50 < anchors[i].offsetTop) {}
+  while(--i && window.scrollY + 125 < anchors[i].offsetTop) {}
 
   navBtns.forEach(btn => btn.classList.remove('current'))
   navBtns[i].classList.add('current')
