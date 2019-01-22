@@ -675,7 +675,7 @@ figure {
 
 @media (max-width: 1000px) {
   .d-description {
-    margin: 4em 1.5em 2em;
+    margin: 4em 0 2em;
   }
 }
 
@@ -744,6 +744,14 @@ figure {
   order: 2;
 }
 
+@media (max-width: 1050px) {
+  .match .d-description,
+  .spot-magazine .d-description,
+  .downtownmag .d-description {
+    padding-left: 0;
+  }
+}
+
 .match .d-project-slider,
 .spot-magazine .d-project-slider,
 .downtownmag .d-project-slider {
@@ -766,6 +774,7 @@ figure {
 @media (max-width: 1050px) {
   .on-immediacy .d-description {
     grid-column: 8 / span 5;
+    padding-left: 0;
   }
 }
 
@@ -798,6 +807,10 @@ figure {
   grid-column: 9 / span 4;
   grid-row: 1 / span 1;
   padding-left: var(--description-padding);
+}
+
+@media (max-width: 1050px) {
+  padding-left: 0;
 }
 
 .ibrs15 .d-project-image:nth-of-type(1) {
