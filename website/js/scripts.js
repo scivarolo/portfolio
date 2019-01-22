@@ -5,7 +5,17 @@ $(document).ready(function(){
     nav: true,
     navText: ['&larr;','&rarr;'],
     lazyLoad: true
-  });
+  })
+
+  $('.s-project-slider').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    navText: ['&larr;','&rarr;'],
+    lazyLoad: true,
+    autoHeight: true
+  })
+
   $('.hidden-projects').hide()
 
   let stickyHeader = function() {

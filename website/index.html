@@ -44,8 +44,8 @@
 
     <div class="container site-intro">
       <div class="site-intro-content">
-        <p>Starting out as a self-taught web developer learning on the job, I discovered that I love the constant learning the challenge of figuring out new problems with code. I have built websites for a variety of clients including non-profit organizations and small businesses and have also worked on interactive exhibits for museums. I am currently at Nashville Software School learning full-stack web development with Javascript, React, Python, and Django.</p>
-        <p>Before becoming a full-time software developer I was a multi-disciplinary designer with experience in print, environmental graphics, signage, exhibit design, and web design + development. Typography and attention to detail are central to my design aesthetic.</p>
+        <p>I am a former graphic designer that discovered my love for code while teaching myself as I built websites for a variety of clients including non-profit organizations and small businesses. I decided to transition into software development because I love being in a cycle of perpetual learning, and the challenge of solving new problems with code. I am currently at Nashville Software School learning full-stack software development with Javascript, React, Python, and Django.</p>
+        <p>In my previosu role, I was a multi-disciplinary designer with experience in print, environmental graphics, signage, exhibit design, and web design + development. Typography and attention to detail are central to my design aesthetic, and this attention to detail carries over into my code.</p>
         <div class="dev-icons">
           <div class="icon-wrapper" id="javascript" tooltip="Javascript">
             <svg viewBox="0 0 128 128">
@@ -105,12 +105,22 @@
       <div class="software-project">
         <div class="s-project__images">
           <!-- TODO: add image(s) for Barkeeper -->
-          <img src="//picsum.photos/800/600" alt="placeholder" />
+          <div class="s-project-slider owl-carousel">
+            <div>
+              <img class="owl-lazy" data-src="images/apps/cocktails.gif" alt="Spot Magazine spread 1" />
+            </div>
+            <div>
+              <img class="owl-lazy" data-src="images/apps/bar-inventory.gif" alt="Spot Magazine spread 1" />
+            </div>
+            <div>
+              <img class="owl-lazy" data-src="images/apps/shopping-list.gif" alt="Spot Magazine spread 1" />
+            </div>
+          </div>
         </div>
         <div class="s-project__content">
           <h3 class="s-project__title">Barkeeper</h3>
           <p>Barkeeper takes the guesswork out of making cocktails at home. Save your favorite recipes and track the alcohol and other ingredients you have on hand. When you&rsquo;re ready to make some cocktails, Barkeeper will tell you which cocktails you can make with what you have on hand, and tell you which ingredients you're missing and let you save them to your shopping list. Click 'make', and your inventory is updated to reflect the amount of each ingredient you just used.</p>
-          <p class="italic">Barkeeper is a front-end application built with React.</p>
+          <p class="italic">Barkeeper is a front-end application built with React. It utilizes Reacstrap components for layout and is styled with Bootstrap customized with SCSS. The database uses a flat data structure and is served through json-server.</p>
           <a class="link" href="//github.com/scivarolo/barkeeper">view on github</a>
         </div>
       </div>
@@ -124,23 +134,28 @@
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="/waterinthehome/"><h2>Water in the Home Calculator</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Javascript</span>
+            </div>
           </div>
-          <p class="l-project-description">Interactive exhibit for the Laredo Water Museum that estimates your daily, weekly, monthly, and yearly water usage based on a series of questions about how you consume water at home. An animated gauge shows you how different answers affect your usage in real time, and results are graphed at the end to show where your usage is highest.</p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Javascript</span>
+          <div class="l-project-description">
+            <p>Interactive exhibit for the Laredo Water Museum that estimates your daily, weekly, monthly, and yearly water usage based on a series of questions about how you consume water at home. An animated gauge shows you how different answers affect your usage in real time, and results are graphed at the end to show where your usage is highest.</p>
           </div>
         </li>
+
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//buffalobayou.org" target="_blank"><h2>Buffalo Bayou Partnership</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Wordpress</span>
+              <span class="l-project-tag">Javascript</span>
+            </div>
           </div>
-          <p class="l-project-description">The organization transforming Houston&rsquo;s most significant natural resource needed a website to showcase their efforts, but also include programming for one of the city&rsquo;s largest public green spaces. I adapted an interactive Google Map that was developed for an app to show the amenities and landmarks within the parks.</p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Wordpress</span>
-            <span class="l-project-tag">Javascript</span>
+          <div class="l-project-description">
+            <p>The organization transforming Houston&rsquo;s most significant natural resource needed a website to showcase their efforts, but also include programming for one of the city&rsquo;s largest public green spaces. I adapted an interactive Google Map that was developed for an app to show the amenities and landmarks within the parks.</p>
           </div>
         </li>
-        <li class="l-project revealjs">
+        <!-- <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//orange-made.com" target="_blank"><h2>ORANGE MADE</h2></a>
           </div>
@@ -148,60 +163,72 @@
           <div class="l-project-tags">
             <span class="l-project-tag">Wordpress</span>
           </div>
-        </li>
+        </li> -->
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//elmorepr.com" target="_blank"><h2>Elmore PR</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Wordpress</span>
+            </div>
           </div>
-          <p class="l-project-description">Website for a Houston-based public relations firm with a 25-year history of connecting clients to individuals, businesses, and communities.</p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Wordpress</span>
+          <div class="l-project-description">
+            <p>Website for a Houston-based public relations firm with a 25-year history of connecting clients to individuals, businesses, and communities.</p>
           </div>
         </li>
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//ssnc.org" target="_blank"><h2>Small Steps Nurturing Center</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Wordpress</span>
+            </div>
           </div>
-          <p class="l-project-description">Website for a nonprofit that provides early childhood programs to Houston&rsquo;s economically at-risk children and their families </p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Wordpress</span>
+          <div class="l-project-description">
+            <p>Website for a nonprofit that provides early childhood programs to Houston&rsquo;s economically at-risk children and their families </p>
           </div>
         </li>
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//feldman.law" target="_blank"><h2>Feldman and Feldman</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Wordpress</span>
+            </div>
           </div>
-          <p class="l-project-description">New website launched with the rebrand of a local Houston law firm.</p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Wordpress</span>
+          <div class="l-project-description">
+            <p>New website launched with the rebrand of a local Houston law firm.</p>
           </div>
         </li>
 
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//inprinthouston.org" target="_blank"><h2>Inprint</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Wordpress</span>
+            </div>
           </div>
-          <p class="l-project-description">Inprint's website showcases the multitude of programs and events offered to Houston&rsquo;s readers and writers.</p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Wordpress</span>
+          <div class="l-project-description">
+            <p>Inprint's website showcases the multitude of programs and events offered to Houston&rsquo;s readers and writers.</p>
           </div>
         </li>
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//kinderfoundation.org" target="_blank"><h2>Kinder Foundation</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Wordpress</span>
+            </div>
           </div>
-          <p class="l-project-description">The Kinder Foundation provides transformational grants focused on the Greater Houston area that support urban parks and green spaces, education, and quality of life.</p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Wordpress</span>
+          <div class="l-project-description">
+            <p>The Kinder Foundation provides transformational grants focused on the Greater Houston area that support urban parks and green spaces, education, and quality of life.</p>
           </div>
         </li>
         <li class="l-project revealjs">
           <div class="l-project-title">
             <a class="l-project-link" href="//themercersociety.org" target="_blank"><h2>The Mercer Society</h2></a>
+            <div class="l-project-tags">
+              <span class="l-project-tag">Wordpress</span>
+            </div>
           </div>
-          <p class="l-project-description">The Mercer Society provides financial support to the Mercer Botanic Gardens in Houston, TX. Their role and online presence has been crucial as the gardens recover following the devastation left by Hurricane Harvey.</p>
-          <div class="l-project-tags">
-            <span class="l-project-tag">Wordpress</span>
+          <div class="l-project-description">
+            <p>The Mercer Society provides financial support to the Mercer Botanic Gardens in Houston, TX. Their role and online presence has been crucial as the gardens recover following the devastation left by Hurricane Harvey.</p>
           </div>
         </li>
 
