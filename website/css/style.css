@@ -67,8 +67,7 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -292,8 +291,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -328,8 +326,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -410,8 +407,7 @@ template {
  * Set up a decent box model on the root element
  */
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -422,11 +418,10 @@ html {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+  box-sizing: inherit; }
 
 body {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0ce5a9), color-stop(5%, rgba(12, 229, 169, 0.25)), color-stop(11%, rgba(12, 229, 169, 0)));
+  border-top: 9px solid #0ce5a9;
   background-image: linear-gradient(to top, #0ce5a9 0%, rgba(12, 229, 169, 0.25) 5%, rgba(12, 229, 169, 0) 11%);
   /* iPhone X notch padding */
   padding-left: constant(safe-area-inset-left);
@@ -440,9 +435,9 @@ body {
 a.link,
 .text-link {
   color: #0ce5a9;
+  font-family: "Space Mono", monospace;
   text-decoration: none;
   position: relative;
-  -webkit-transition: color .25s ease-in-out;
   transition: color .25s ease-in-out; }
   a.link:hover, a.link:active, a.link:focus,
   .text-link:hover,
@@ -458,14 +453,10 @@ a.link,
     width: 0%;
     left: 0;
     background-color: #09b585;
-    -webkit-transition: width .25s ease-in-out;
     transition: width .25s ease-in-out; }
   a.link:hover::after,
   .text-link:hover::after {
     width: 100%; }
-
-.text-link {
-  font-family: "Space Mono", monospace; }
 
 @font-face {
   font-family: 'Sporting Grotesque_Regular';
@@ -503,6 +494,9 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: translateY(55%);
             transform: translateY(55%); }
 
+.italic {
+  font-style: italic; }
+
 /**
  * Clear inner floats
  */
@@ -524,9 +518,9 @@ h1, h2, h3, h4, h5, h6 {
   /* 2 */
   margin-right: auto;
   /* 2 */
-  padding-left: 20px;
+  padding-left: 2em;
   /* 3 */
-  padding-right: 20px;
+  padding-right: 2em;
   /* 3 */
   width: 100%;
   /* 1 */ }
@@ -560,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-header {
   color: #424242;
-  padding: 1.5em; }
+  padding: 2em; }
 
 .site-title {
   font-size: 20px;
@@ -585,8 +579,7 @@ h1, h2, h3, h4, h5, h6 {
   .site-header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 1em;
-    margin-top: 1em; }
+    grid-column-gap: 1em; }
   .site-title {
     grid-column: 1 / span 5; }
   .site-subheads {
@@ -627,14 +620,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Sporting Grotesque_Regular", "Helvetica", "Arial", sans-serif;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, white));
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, white 50%);
     background-position: 0 0;
     background-size: 200.1% 200.1%;
     color: transparent;
     -webkit-text-stroke: 1px #424242;
     -webkit-text-fill-color: transparent;
-    -webkit-transition: background-position .5s ease-in-out;
     transition: background-position .5s ease-in-out; }
     @media (min-width: 1200px) {
       .social-links a {
@@ -643,6 +634,23 @@ h1, h2, h3, h4, h5, h6 {
     .social-links a:hover, .social-links a:focus {
       color: white;
       background-position: 0 100%; }
+
+@media (min-width: 700px) {
+  .software-project {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: repeat(12, 1fr); }
+  .s-project__content {
+    grid-column: 1 / span 5;
+    padding-right: 2em; }
+  .s-project__images {
+    grid-column: 6 / span 7;
+    grid-row: 1; }
+    .s-project__images img {
+      max-width: 100%; } }
+
+.software-project {
+  margin-bottom: 2em; }
 
 .projects-list,
 .experience-list {
@@ -675,11 +683,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
   .l-project-link h2 {
     display: inline;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, #0ce5a9));
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #0ce5a9 50%);
     background-position: 0 0;
     background-size: 200.1%;
-    -webkit-transition: background-position 0.3s ease-in-out;
     transition: background-position 0.3s ease-in-out; }
   .l-project-link:hover h2 {
     background-position: -100% 0; }
@@ -754,7 +760,6 @@ h1, h2, h3, h4, h5, h6 {
 .logo__orangemade img:last-child {
   display: none;
   opacity: 0;
-  -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease; }
 
 .logo__orangemade:hover img:first-child {
@@ -801,8 +806,7 @@ figure {
     .d-project-image {
       margin-bottom: 1.5em; } }
   .d-project-image img {
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15); }
 
 @media (max-width: 1000px) {
   .d-description {
@@ -822,16 +826,11 @@ figure {
   font-size: 50px;
   font-size: 3.125em;
   line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: -1em; }
 
 .owl-prev, .owl-next {
-  -webkit-transition: all .125s ease;
   transition: all .125s ease; }
   .owl-prev:hover, .owl-next:hover {
     color: #089c73 !important; }
@@ -864,16 +863,12 @@ figure {
   .downtownmag .d-description {
     grid-column: 9 / span 4;
     padding-left: 1.5em;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+    order: 2; }
   .match .d-project-slider,
   .spot-magazine .d-project-slider,
   .downtownmag .d-project-slider {
     grid-column: 1 / span 8;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
+    order: 1; }
 
 .on-immediacy .d-description {
   grid-column: 9 / span 4;
