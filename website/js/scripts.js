@@ -4,7 +4,8 @@ $(document).ready(function(){
     loop : true,
     nav: true,
     navText: ['&larr;','&rarr;'],
-    lazyLoad: true
+    lazyLoad: true,
+    lazyLoadEager: 1
   })
 
   $('.s-project-slider').owlCarousel({
@@ -13,6 +14,7 @@ $(document).ready(function(){
     nav: true,
     navText: ['&larr;','&rarr;'],
     lazyLoad: true,
+    lazyLoadEager: 1,
     autoHeight: true
   })
 
