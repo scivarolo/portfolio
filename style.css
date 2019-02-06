@@ -1,12 +1,19 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 :root {
   /* --color__green: 12, 229, 169; */
   --color__green: 12, 214, 158;
   --color__green-dark: #09b585;
   --color__black: #424242;
   --karla: 'Karla', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --inter: 'Inter var', 'Inter', Helvetica, sans-serif;
   --space-mono: 'Space Mono', monospace;
   --sporting: 'Sporting Grotesque_Regular', 'Helvetica', 'Arial', sans-serif;
-  --text-font-stack: var(--karla);
+  --text-font-stack: var(--inter);
   --mono-font: var(--space-mono);
   --display-font: var(--sporting);
   --text-color: var(--color__black);
@@ -38,6 +45,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  letter-spacing: 0.02em;
 }
 
 /* All elements inherit box-sizing */
@@ -85,7 +93,8 @@ body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-left);
   color: var(--text-color);
-  font: normal 100% / 1.5 var(--text-font-stack);
+  font: normal 300 100% / 1.65 var(--text-font-stack);
+  /* font-weight: 300; */
 }
 
 @media (max-width: 700px) {
@@ -469,7 +478,7 @@ a.current::after,
 .l-project {
   border-top: 1px solid var(--light-gray);
   padding-bottom: 3em;
-  padding-top: 0.75em;
+  padding-top: 1em;
 }
 
 .l-project-title {
@@ -914,9 +923,10 @@ figure {
 }
 
 .l-experience-title {
-  font-size: 20px;
-  font-size: calc(20em / 16);
-  margin: 0;
+  font-size: 18px;
+  font-size: calc(18em / 16);
+  margin: -5px 0 0;
+  font-weight: 500;
 }
 
 .l-experience-dates {
